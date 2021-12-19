@@ -5,9 +5,9 @@ function getTime(time) {
     let day
     let hour
     let minute
-    let secund
+    let second
 
-    secund = time % 60
+    second = time % 60
     minute = Math.floor(time / 60)
     hour = Math.floor(minute / 60)
     day = Math.floor(hour / 24)
@@ -26,7 +26,7 @@ function getTime(time) {
     month = month >= 12 ? month % 12 : month 
     year = month > 12 ? year + Math.floor(month / 12) : year
 
-    return `${year}y ${month}mth ${week}w ${day}d ${hour}h ${minute}min ${secund}s`
+    return `${year}y ${month}mth ${week}w ${day}d ${hour}h ${minute}min ${second}s`
 }
 
 console.log(getTime(30));
