@@ -31,6 +31,8 @@ function getTime(time) {
 
 console.log(getTime(30));
 
+// Optional
+
 // let num = 0
 // setInterval(() => {
 //     num++
